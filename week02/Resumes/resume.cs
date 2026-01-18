@@ -2,7 +2,7 @@ public class Resume
 {
     public string _fullName = "";
 
-    public List<Job> _jobs = new List<Job>();
+    public List<Job> jobs = new List<Job>();
     
     public Resume()
     {
@@ -13,7 +13,7 @@ public class Resume
         Console.WriteLine($"Resume for Name: {_fullName}");
         Console.WriteLine("Jobs:");
 
-        foreach(Job j in _jobs)
+        foreach(Job j in jobs)
         {
             j.Display();
         }
