@@ -1,9 +1,9 @@
 using System;
-
 class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Part 1");
         Console.Write("What is the magic number? ");
         int magicNumber1 = int.Parse(Console.ReadLine());
         Console.Write("What is your guess? ");
@@ -21,6 +21,8 @@ class Program
             Console.WriteLine("You guessed it!");
         }
 
+        Console.WriteLine();
+        Console.WriteLine("Part 2");
         Console.Write("What is the magic number? ");
         int magicNumber2 = int.Parse(Console.ReadLine());
         int guess2 = -1;
@@ -42,6 +44,8 @@ class Program
             }
         }
 
+        Console.WriteLine();
+        Console.WriteLine("Part 3");
         Random randomGenerator = new Random();
         int magicNumber3 = randomGenerator.Next(1, 101);
         int guess3 = -1;
