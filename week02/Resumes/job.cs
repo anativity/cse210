@@ -5,9 +5,12 @@ public class Job
     public int _startYear = 0;
     public int _endYear = 0;
     
-    public Job()
+    public Job(string jobTitle, string company, int startYear, int endYear)
     {
-        
+        _jobTitle = jobTitle;
+        _company = company;
+        _startYear = startYear;
+        _endYear = endYear;
     }
     public void Display()
     {
