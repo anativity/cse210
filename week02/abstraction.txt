@@ -1,0 +1,20 @@
+Abstraction is simplifying code into classes and breaking things down into the smallest pieces. This makes code easier to understand and to update. Only components that are required for that class are included in that class.
+In this way, only what is needed for each class is included in that class.
+
+It is important because it can allow for easier updates for one section at a time and by separate users. 
+A benefit is that it could be easier to enhance one section as it is clearly broken out.
+ 
+An example of abstraction is breaking the Journal program into three parts - the program, the journal, and the entry code.
+This allows us to coordinate with specific tasks and simplify from working with one larger program.
+
+In the Journal.cs file, the journal allows the program to call items and save to a file:
+public void SaveToFile(string filename)
+    {
+        List<string> lines = new List<string>();
+        foreach (Entry e in _entries)
+        {
+            lines.Add(e.SaveString());
+        }
+        File.WriteAllLines(filename, lines);
+    }
+This is something that is not stored in the main program. The Program does not have to include how to save to file, it just relies on the Journal which simplifies that program.
