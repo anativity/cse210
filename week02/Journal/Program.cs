@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 class Program
 {
-    static List<string> prompts = new List<string>
+    public static List<string> prompts = new List<string>
     {
         "Who was the most interesting person I interacted with today?",
         "What was the best part of my day?",
@@ -11,7 +11,7 @@ class Program
         "If I had one thing I could do over today, what would it be?"
     };
 
-    static void Main(string[] args)
+    public static void Main(string[] args )
     {
         Journal journal = new Journal();
         string choice = "";
@@ -59,7 +59,7 @@ class Program
         }
     }
 
-    static string GetRandomPrompt()
+    public static string GetRandomPrompt()
     {
         Random random = new Random();
         return prompts[random.Next(prompts.Count)];
