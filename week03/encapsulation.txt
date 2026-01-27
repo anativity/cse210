@@ -1,0 +1,24 @@
+//Explain the meaning of Encapsulation.
+
+Encapusulation is a way that you can confine variables to a specific class.
+All the methods in the class will be able to access these variables; however, they will be contained themselves in the class and not accessible to other classes.
+This allows a separation of details to a specific class so that only public methods are shared from the class.
+It can allow for easier distinction and updates later as the variables are contained in one class and not passed between classes.
+
+
+//Highlight a benefit of Encapsulation.
+
+A benefit of encapsulation is that you can protect your data. When you use encapsulation to create private variables, these are not shared to other classes.
+This way, you can determine using class methods what you want to be available to pass between classes.
+Also, the code that is set to private in a class is unable to be access outside of the specific class which is more privacy.
+
+
+//Provide an application of Encapsulation.
+
+An application of encapuslation is from our class example with the bank account.
+Using private featutre, we can keep the balance in a separate hidden status and pass deposit/withdrawal information without accessing the account balance (if that is set to private, for example).
+This will allow only the information that we want to be accessible from a specific part of a program.
+
+
+
+//Use a code example of Encapsulation from the program you wrote. 
