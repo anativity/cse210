@@ -22,3 +22,21 @@ This will allow only the information that we want to be accessible from a specif
 
 
 //Use a code example of Encapsulation from the program you wrote. 
+An example of Encapsulation from the code I wrote is found in the Reference.cs file.
+In this example, the variables that store the Book, Chapter, and Verse were set to private, but are available to be constructed in a public method which will allow them to pass into the Program.
+This protects the data while still allowing the Program class to use the Reference object.
+See the following example:
+"public class Reference
+{
+    private string _book;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
+
+    public Reference(string book, int chapter, int verse)
+    {
+        _book = book;
+        _chapter = chapter; 
+        _verse = verse;
+        _endVerse = 0;
+    }"
