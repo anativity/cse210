@@ -1,0 +1,80 @@
+YouTube Video Program
+
+    Video
+        _length : int
+        _title : string
+        _author : string
+        _comments : List<Comments>
+
+        Video(length: int, title : string, author : string)
+
+        NewComment(Comment : Comment): void
+
+        GetNumComments(): int
+
+        GetDisplayVideo(): string
+
+    Comment
+        _name : string
+        _text : string
+
+        Comment(name: string, text: string)
+
+        GetDisplayComments(): string
+
+
+
+Online Ordering Program
+
+    Order
+        _products : List<Products>
+        _customer : Customer
+
+        Order(Customer: Customer)
+
+        NewProduct(Product: Product): void
+        
+        GetTotalPrice(): int
+
+        GetPacking(): string
+
+        GetShipping(): string
+
+
+    Product
+        _name : string  
+        _productID : string
+        _price : double
+        _quantity : int
+
+        Product(name : string, productID : string, price : double, quantity : int)
+        
+        GetTotalCost(): double
+        
+        GetPackingLabel(): string
+
+
+    Customer
+        _name : string
+        _address :  Address
+     
+        Customer(name : string, Address : address)
+        
+        IsUSA(): bool
+        
+        GetShippingLabel(): string
+
+    Address
+        _streetAddress : string
+        _city : string
+        _stateProvince : string
+        _country : string
+
+        Address(streetAddress : string, city : string, stateProvince : string, country : string)
+        
+        IsUSA(): bool
+        
+        GetShipping(): string
+
+
+
