@@ -1,5 +1,10 @@
 YouTube Video Program
-
+// The YouTube Video program models a simple system for storing and displaying information about online videos. 
+Each Video object keeps track of its title, author, length, and a list of associated Comment objects. 
+The program creates several videos, adds multiple comments to each one, and then displays all the details by calling methods that return formatted information about the video and its comments. 
+The classes work together by having Video manage its collection of Comment objects, while each Comment is responsible only for storing and presenting its own data. 
+This demonstrates abstraction by organizing related responsibilities into classes.
+    
     Video
         _length : int
         _title : string
@@ -25,6 +30,11 @@ YouTube Video Program
 
 
 Online Ordering Program
+
+//The Online Ordering program is an online ordering system coordinating four classes: Order, Product, Customer, and Address. 
+An Order contains a list of Product objects and a Customer, and it uses these relationships to calculate the total price, generate packing labels, and produce shipping labels. 
+Each Product knows its own cost and identifying information, while Customer and Address work together to determine shipping location and format the shipping label. 
+The program shows encapsulation by keeping data private within each class and exposing only the methods needed to compute totals and display order information.
 
     Order
         _products : List<Product>
