@@ -4,7 +4,7 @@ YouTube Video Program
         _length : int
         _title : string
         _author : string
-        _comments : List<Comments>
+        _comments : List<Comment>
 
         Video(length: int, title : string, author : string)
 
@@ -27,14 +27,14 @@ YouTube Video Program
 Online Ordering Program
 
     Order
-        _products : List<Products>
+        _products : List<Product>
         _customer : Customer
 
         Order(Customer: Customer)
 
         NewProduct(Product: Product): void
         
-        GetTotalPrice(): int
+        GetTotalPrice(): double
 
         GetPacking(): string
 
@@ -58,7 +58,7 @@ Online Ordering Program
         _name : string
         _address :  Address
      
-        Customer(name : string, Address : address)
+        Customer(name : string, address : Address)
         
         IsUSA(): bool
         
