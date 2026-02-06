@@ -6,7 +6,7 @@ class Program
     {
         Address address1 = new Address("123 Test St", "Crystal River", "FL", "USA");
         Customer customer1 = new Customer("Princess Dog", address1);
-        Order order1 = new Order(customer1);
+        Order order1 = new rder(customer1);
 
         order1.NewProduct(new Product("Dog Treat", "A100", 15.99, 2));
         order1.NewProduct(new Product("Chew Toy", "A101", 9.99, 1));
