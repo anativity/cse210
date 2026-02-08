@@ -1,0 +1,29 @@
+Inheritance
+//Explain the meaning of Inheritance.
+Inheritance is a component of object-oriented programming that allows a parent-child relationship in classes.
+This means that you can pass along methods and parameters from one parent class to multiple child classes.
+This allows for clean programming for linking related child classes to a parent class.
+
+//Highlight a benefit of Inheritance.
+A benefit of inheritance is that you will be able to use code from the parent class and not have to re-type it for each class.
+This also will streamline programming for updates for the main class.
+
+//Provide an application of Inheritance.
+An example of inheritance is from our class assignment.
+In our assignment, we discussed that a book class (parent class) can contain a title and author.
+A child class could be for PictureBook and include illustrator.
+
+//Use a code example of Inheritance from the program you wrote. (You should copy and paste a few lines of code that demonstrate the use of the principle.)
+In the program created this week, here is an example of using inheritance to pass along this code from the Activity class to other classes: 
+"public void DisplayStartingMessage()
+    {
+        Console.WriteLine($"Welcome to the {_name} activity.");
+        Console.WriteLine(_description);
+        Console.Write("Enter the duration in seconds: ");
+        _duration = int.Parse(Console.ReadLine());
+        Console.WriteLine("Get ready to begin ...");
+        ShowSpinner(3);
+    }"
+    Also here is an example showing that a class is a child of the Activity class:
+    "public class BreathingActivity : Activity"
+    
